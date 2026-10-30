@@ -3,6 +3,8 @@
 - `report/CL443_report.pdf`: the main report. Sections 1 to 7.5 are unchanged from the 23 Oct version.
   Section 7.6 (Galerkin test) and Section 8 (SINDy) are the new versions, and the Summary is updated.
   Section 10 lists the settled choices.
+- `report/CL443_report_professor.pdf`: the version to show the professor. It has no "Decided" lines, no
+  "Why" paragraphs and no interpretation of the Experiment 5–6 results: just the methods, definitions, tables and figures.
 - `report/CL443_report.tex`: LaTeX source. `report/tables/*.tex` and `report/figs/*.pdf` are generated
   by the Python scripts. `report/main_figs/` holds the figures of Experiments 1 to 5, taken from the 23 Oct PDF.
 

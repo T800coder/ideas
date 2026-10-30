@@ -75,6 +75,8 @@ def lorenz():
             s.append(f"{case} & {lab} & {r['terms']} & {r['wrong']} & {lamr(r)} & {sci(r['lam_max'], 2)}" + r'\\')
     s.append(r'\bottomrule\end{tabular}')
     w('lorenz_rule_applied.tex', '\n'.join(s))
+    # same table without the '(main)' label, for the version shown to the professor
+    w('lorenz_rule_applied_plain.tex', '\n'.join(s).replace(' (main)', ''))
     # coefficients
     true = {('x', 0): -10, ('y', 0): 10, ('x', 1): 28, ('y', 1): -1, ('xz', 1): -1, ('z', 2): -8 / 3, ('xy', 2): 1}
     s = [r'\begin{tabular}{llrrrr}\toprule Equation & Term & True & A (exact) & C2 (2nd order) & C4 (4th order)\\\midrule']
