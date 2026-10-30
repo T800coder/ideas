@@ -1,0 +1,9 @@
+\begin{tabular}{l|cc|cc|cc|cc}\toprule
+ & \multicolumn{2}{c|}{test $\omega=0.1$} & \multicolumn{2}{c|}{test $\omega=1$} & \multicolumn{2}{c|}{test $\omega=10$} & \multicolumn{2}{c}{test $\omega=100$}\\
+Model & $C_s$ & gap & $C_s$ & gap & $C_s$ & gap & $C_s$ & gap\\\midrule
+Galerkin & $1.52\!\times\!10^{-6}$ & $1.61\!\times\!10^{-4}$ & $1.07\!\times\!10^{-3}$ & 0.0161 & 0.704 & 1.48 & 16.3 & 20.1\\
+SINDy, trained at $\omega = 0.1$ & $2.18\!\times\!10^{-5}$ & $3.17\!\times\!10^{-3}$ & $1.15\!\times\!10^{-3}$ & 0.0174 & 0.715 & 1.51 & 16.4 & 20.3\\
+SINDy, trained at $\omega = 1$ & $1.23\!\times\!10^{-4}$ & 0.0184 & $1.85\!\times\!10^{-4}$ & $2.72\!\times\!10^{-3}$ & 0.695 & 1.46 & 16.3 & 20.1\\
+SINDy, trained at $\omega = 10$ & $9.40\!\times\!10^{-3}$ & 1.41 & 0.0925 & 1.39 & 0.0423 & 0.089 & 15.6 & 19.3\\
+SINDy, trained at $\omega = 100$ & 0.107 & 16 & 1.06 & 16 & 7.29 & 15.4 & 1.43 & 1.77\\
+\bottomrule\end{tabular}
